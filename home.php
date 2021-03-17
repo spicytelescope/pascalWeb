@@ -1,5 +1,11 @@
 <?php
 include('./modele/config/connect_db.php');
+
+session_start();
+if (empty($_SESSION['email'])) {
+  header('Location: /vitrine/login.php');
+  exit();
+}
 ?>
 
 <!DOCTYPE html>

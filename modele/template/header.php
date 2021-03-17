@@ -5,9 +5,12 @@
     <!-- Scripts -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     </script>
     <style>
         html {
@@ -35,9 +38,16 @@
 <body>
     <nav class="z-depth-1">
         <div class="container">
-            <a href="/vitrine/" class="brand-logo brand-text" id="home-btn">Vitrine</a>
-            <ul>
-                <li> <a class="waves-effect waves-light btn-large green" href="/vitrine/vue/insererProduit.php">Add a product <i class="material-icons right">add</i></a></li>
-            </ul>
+            <a href="/vitrine/home.php" class="brand-logo brand-text" id="home-btn">Vitrine</a>
+            <?php
+            if (isset($_SESSION['username']) and !empty($_SESSION['username'])) : ?>
+                <ul class="right">
+                    <li>
+                        <a href="#">Hello,
+                        <?php echo $_SESSION['username'] ?></a>
+                    </li>
+                    <li><a href="/vitrine/modele/auth/logout.php"><i class="material-icons right">logout</i></a></li>
+                </ul>
+            <?php endif; ?>
         </div>
     </nav>

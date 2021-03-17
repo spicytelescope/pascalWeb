@@ -7,7 +7,7 @@ $labels = $products->fetch_fields();
 ?>
 <style>
     #tableActions>a {
-        margin: 0% 2% 0% 2%;
+        margin: 0% 5% 0% 5%;
     }
 </style>
 <div class="container">
@@ -71,11 +71,14 @@ $labels = $products->fetch_fields();
                     }
                     ?>
 
-
-
                 </tbody>
             </table>
         </div>
     </div>
 
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red tooltipped" data-position="top" data-tooltip="Add a product" href='/vitrine/vue/insererProduit.php'>
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
 </div>
