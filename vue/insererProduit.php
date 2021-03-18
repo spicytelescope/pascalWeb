@@ -28,7 +28,7 @@ if (isset($_POST['submitForm'])) {
     <div class="card blue darken-1 z-depth-4 rounded">
       <div class="card-content white-text">
         <span class="card-title">
-          <h1>Insérer un produit 🙃</h1>
+          <h1 class="center-align">Insérer un produit 🙃</h1>
         </span>
         <form action="./insererProduit.php" class="col s12" method="POST">
           <div class="row">

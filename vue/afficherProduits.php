@@ -21,7 +21,8 @@ $labels = $products->fetch_fields();
                     <tr>
                         <?php foreach ($labels as $l) {
                             echo "<th>$l->name</th>";
-                        } ?>
+                        }
+                        echo "<th>Modifier</th>"; ?>
                     </tr>
                 </thead>
 
