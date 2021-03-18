@@ -14,11 +14,7 @@
     </script>
     <style>
         html {
-            background: linear-gradient(90deg,
-                    rgba(193, 17, 193, 1) 0%,
-                    rgba(24, 68, 185, 1) 47%,
-                    rgba(212, 110, 162, 1) 91%,
-                    rgba(255, 157, 0, 1) 100%);
+            background-color: #FCF5E5;
         }
     </style>
 
@@ -36,7 +32,7 @@
 </head>
 
 <body>
-    <nav class="z-depth-1">
+    <nav class="z-depth-1 red accent-2">
         <div class="container">
             <a href="/vitrine/home.php" class="brand-logo brand-text" id="home-btn">Vitrine</a>
             <?php

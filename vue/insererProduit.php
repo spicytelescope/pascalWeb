@@ -25,7 +25,7 @@ if (isset($_POST['submitForm'])) {
 
 <body>
   <div class="container">
-    <div class="card blue darken-1 z-depth-4 rounded">
+    <div class="card teal darken-2 z-depth-4 rounded">
       <div class="card-content white-text">
         <span class="card-title">
           <h1 class="center-align">Insérer un produit 🙃</h1>
@@ -45,7 +45,7 @@ if (isset($_POST['submitForm'])) {
               <label>Price</label>
             </div>
           </div>
-          <input class="waves-effect waves-light btn" type="submit" name="submitForm" value="Add a product" />
+          <input class="waves-effect waves-light btn white-text" type="submit" name="submitForm" value="Add a product" />
         </form>
       </div>
     </div>

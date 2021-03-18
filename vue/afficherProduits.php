@@ -11,7 +11,7 @@ $labels = $products->fetch_fields();
     }
 </style>
 <div class="container">
-    <div class="card red lighten-2 z-depth-1 hoverable">
+    <div class="card red accent-2 z-depth-1 hoverable">
         <div class="card-content white-text">
             <span class="card-title">
                 <h1 class="center-align">Produits vitrines</h1>
@@ -34,12 +34,14 @@ $labels = $products->fetch_fields();
                             echo "<td>$v</td>";
                         }
 
-                        echo '<td id="tableActions"><a class="waves-effect waves-light btn green tooltipped modal-trigger" data-position="top" data-tooltip="Edit a product" href="#modal' . $p['code'] . '"><i class="material-icons">edit</i></a>';
+                        echo '<td id="tableActions"><a class="waves-effect waves-light btn green tooltipped modal-trigger"
+                         data-position="top" data-tooltip="Edit a product" href="#modal' . $p['code'] . '">
+                         <i class="material-icons">edit</i></a>';
                         echo '<a class="waves-effect waves-light btn red tooltipped" data-position="top" data-tooltip="Delete a product" href="/vitrine/modele/delete.php?code=' . $p['code'] . '"><i class="material-icons">delete</i></a></td>';
                         echo "</tr>";
-
+                        
                         // Modal
-                        echo '<div id="modal' . $p['code'] . '" class="modal blue darken-1">
+                        echo '<div id="modal' . $p['code'] . '" class="modal blue darken-2">
                             <div class="modal-content">
                                 <div class="container">
                                         <div class="card-content white-text">
