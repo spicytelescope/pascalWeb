@@ -54,14 +54,14 @@ if (isset($_SESSION['username'])) {
                         <label for="password">Password</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12" style="display:flex; justify-content:center;">
+                <div class="row" style="margin: 0px;">
+                    <div class="input-field col s12" style="display:flex; justify-content:center; margin: 0px;">
                         <input type="submit" value="Login" class="btn waves-effect waves-light col">
                     </div>
                 </div>
             </form>
-            <div class="row">
-                <div class="input-field col s6 m6 l6">
+            <div class="row" style="margin: 0px;">
+                <div class="input-field col s6 m6 l6" style="margin: 0px;">
                     <p class="margin medium-small center-align"><a href="/vitrine/vue/register.php">No account ? Register Now !</a></p>
                 </div>
             </div>
