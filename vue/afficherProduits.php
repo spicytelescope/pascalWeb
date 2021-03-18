@@ -33,12 +33,12 @@ $labels = $products->fetch_fields();
                             echo "<td>$v</td>";
                         }
 
-                        echo '<td id="tableActions"><a class="waves-effect waves-light btn green tooltipped modal-trigger" data-position="top" data-tooltip="Edit a product" href="#modal1"><i class="material-icons">edit</i></a>';
-                        echo '<a class="waves-effect waves-light btn red tooltipped" data-position="top" data-tooltip="Delete a product" href="/vitrine/modele/delete.php?name=' . $p['nom'] . '&description=' . $p['description'] . '&price=' . $p['prix'] . '&code=' . $p['code'] . '"><i class="material-icons">delete</i></a></td>';
+                        echo '<td id="tableActions"><a class="waves-effect waves-light btn green tooltipped modal-trigger" data-position="top" data-tooltip="Edit a product" href="#modal' . $p['code'] . '"><i class="material-icons">edit</i></a>';
+                        echo '<a class="waves-effect waves-light btn red tooltipped" data-position="top" data-tooltip="Delete a product" href="/vitrine/modele/delete.php?code=' . $p['code'] . '"><i class="material-icons">delete</i></a></td>';
                         echo "</tr>";
 
                         // Modal
-                        echo '<div id="modal1" class="modal blue darken-1">
+                        echo '<div id="modal' . $p['code'] . '" class="modal blue darken-1">
                             <div class="modal-content">
                                 <div class="container">
                                         <div class="card-content white-text">
